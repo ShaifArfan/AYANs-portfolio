@@ -16,6 +16,7 @@ const NavStyles = styled.nav`
       color: black;
       padding: 1rem 2rem;
       font-size: 2.5rem;
+      color: var(--gary-1);
     }
   }
 `;
