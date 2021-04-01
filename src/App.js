@@ -1,20 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import styled from 'styled-components';
-import About from './components/About';
-import Contact from './components/Contact';
-import LandingPage from './components/LandingPage';
-import NavMenu from './components/NavMenu';
-import Project from './components/Project';
 
-const BodyStyle = styled.div`
-  background-color: var(--dark-bg);
-  color: var(--gray-1);
-`;
+import NavMenu from './components/NavMenu';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 export default function App() {
   return (
-    <BodyStyle>
+    <div>
       <Router>
         <NavMenu />
         <Switch>
@@ -24,14 +19,14 @@ export default function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/project">
-            <Project />
+          <Route path="/projects">
+            <Projects />
           </Route>
           <Route path="/">
-            <LandingPage />
+            <Home />
           </Route>
         </Switch>
       </Router>
-    </BodyStyle>
+    </div>
   );
 }

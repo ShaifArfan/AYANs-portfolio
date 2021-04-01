@@ -20,7 +20,12 @@
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
-		"extends": "wesbos"
+		"extends": [
+			"wesbos"
+		],
+		"rules": {
+			"react/prop-types": 0
+		}
 	},
 	"browserslist": {
 		"production": [

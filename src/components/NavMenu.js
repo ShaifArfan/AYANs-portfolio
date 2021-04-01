@@ -1,8 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavStyles = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 0;
   ul {
     max-width: 1200px;
@@ -13,10 +17,13 @@ const NavStyles = styled.nav`
       display: inline-block;
     }
     a {
-      color: black;
+      font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--gary-1);
+    }
+    .active_nav {
+      color: var(--white);
     }
   }
 `;
@@ -26,16 +33,18 @@ export default function NavMenu() {
     <NavStyles>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" activeClassName="active_nav">
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <Link to="/project">Project</Link>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </NavStyles>
