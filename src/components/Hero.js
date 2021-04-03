@@ -4,6 +4,7 @@ import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
@@ -14,11 +15,6 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
   }
   .hero__heading {
     font-size: 2rem;
@@ -43,12 +39,6 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     margin-top: -23rem;
-    .hero__info__desc {
-      max-width: 500px;
-      margin: 0 auto;
-      font-size: 1.8rem;
-      line-height: 1.3em;
-    }
   }
   .hero__social,
   .hero__scrollDown {
@@ -117,9 +107,6 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       margin-top: 3rem;
-      .hero__info__desc {
-        font-size: 1.4rem;
-      }
     }
     .hero__social {
       left: 0px;
@@ -169,11 +156,11 @@ export default function Hero() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <p className="hero__info__desc">
+            <PText classNameForP="hero__info__desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took
-            </p>
+            </PText>
             <Button btnText="see my works" />
           </div>
           <div className="hero__social">
@@ -184,16 +171,16 @@ export default function Hero() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="webcifar.com">FB</a>
+                  <a href="http://webcifar.com">FB</a>
                 </li>
                 <li>
-                  <a href="webcifar.com">TW</a>
+                  <a href="http://webcifar.com">TW</a>
                 </li>
                 <li>
-                  <a href="webcifar.com">IG</a>
+                  <a href="http://webcifar.com">IG</a>
                 </li>
                 <li>
-                  <a href="webcifar.com">LI</a>
+                  <a href="http://webcifar.com">LI</a>
                 </li>
               </ul>
             </div>

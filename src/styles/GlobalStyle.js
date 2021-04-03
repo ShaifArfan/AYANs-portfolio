@@ -33,6 +33,11 @@ const GlobalStyles = createGlobalStyle`
   button{
     outline: none
   }
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
 
 `;
 export default GlobalStyles;
