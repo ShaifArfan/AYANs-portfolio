@@ -11,7 +11,7 @@ const PStyle = styled.div`
   }
 `;
 
-export default function PText({ children, classNameForP }) {
+export default function PText({ children }) {
   return (
     <PStyle className="para">
       <p>{children}</p>
