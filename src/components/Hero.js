@@ -156,12 +156,12 @@ export default function Hero() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText classNameForP="hero__info__desc">
+            <PText>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took
             </PText>
-            <Button btnText="see my works" />
+            <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">

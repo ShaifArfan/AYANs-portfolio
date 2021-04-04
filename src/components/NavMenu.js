@@ -9,6 +9,7 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
+  background: var(--dark-bg);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +22,7 @@ const NavStyles = styled.nav`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gary-1);
+      color: var(--gray-1);
     }
     .active_nav {
       color: var(--white);
