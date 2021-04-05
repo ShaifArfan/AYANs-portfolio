@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
+import testimonials from '../assets/testimonials';
 
 const TestimonialSectionStyles = styled.div`
   padding: 10rem 0;
   text-align: center;
+  .testimonial__wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+  }
   .testimonial__info {
+    width: 100%;
+    height: fit-content;
     padding: 3rem;
     background-color: var(--deep-dark);
     border-radius: 12px;
-    max-width: 700px;
-    margin: 0 auto;
     margin-top: 5rem;
   }
   .testimonial__desc {
@@ -48,9 +55,49 @@ const TestimonialSectionStyles = styled.div`
       cursor: pointer;
     }
   }
+  .fade-enter {
+    opacity: 0;
+    transform: scale(0.96);
+    z-index: 1;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: 250ms ease-in;
+    transition-property: transform, opacity;
+    z-index: 1;
+  }
+  .fade-exit {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: 200ms ease-in;
+    transition-property: transform, opacity;
+  }
 `;
 
 export default function TestimonialsSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeSlide = testimonials[activeIndex];
+
+  function handleNext() {
+    if (activeIndex >= testimonials.length - 1) {
+      setActiveIndex(0);
+    } else {
+      setActiveIndex((oldIndex) => oldIndex + 1);
+    }
+  }
+  function handlePrev() {
+    if (activeIndex === 0) {
+      setActiveIndex(testimonials.length - 1);
+    } else {
+      setActiveIndex((oldIndex) => oldIndex - 1);
+    }
+  }
+
   return (
     <TestimonialSectionStyles>
       <div className="container">
@@ -58,26 +105,45 @@ export default function TestimonialsSection() {
           subheading="see what our clients say about us"
           heading="Testimonials"
         />
-        <div className="testimonial__info">
-          <div className="testimonial__desc">
-            <PText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took
-            </PText>
-          </div>
-          <h2 className="testimonial__name">Sayed Ahmed</h2>
-          <p className="testimonial__title">
-            Head of Marketing, <br /> web cifar
-          </p>
+        <div className="testimonial__wrapper">
+          <SwitchTransition component={null}>
+            <CSSTransition
+              key={activeSlide.id}
+              // in={isVisible}
+              timeout={300}
+              classNames="fade"
+            >
+              <div className="testimonial__info">
+                <div className="testimonial__desc">
+                  <PText>{activeSlide.desc}</PText>
+                </div>
+                <h2 className="testimonial__name">{activeSlide.name}</h2>
+                <p className="testimonial__title">
+                  {activeSlide.title}, <br /> {activeSlide.org}
+                </p>
+              </div>
+            </CSSTransition>
+          </SwitchTransition>
         </div>
 
         <div className="arrows">
-          <div className="next">
-            <MdArrowForward />
-          </div>
-          <div className="prev">
+          <div
+            className="prev"
+            onClick={handlePrev}
+            role="button"
+            tabIndex={0}
+            onKeyDown={handlePrev}
+          >
             <MdArrowBack />
+          </div>
+          <div
+            className="next"
+            onClick={handleNext}
+            role="button"
+            tabIndex={0}
+            onKeyDown={handleNext}
+          >
+            <MdArrowForward />
           </div>
         </div>
       </div>
