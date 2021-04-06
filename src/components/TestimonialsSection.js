@@ -4,7 +4,7 @@ import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import testimonials from '../assets/testimonials';
+import testimonials from '../assets/data/testimonials';
 
 const TestimonialSectionStyles = styled.div`
   padding: 10rem 0;
