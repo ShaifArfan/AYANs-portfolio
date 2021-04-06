@@ -54,7 +54,6 @@ export default function ContactForm() {
               id="name"
               name="name"
               value={name}
-              on
               onChange={(e) => setName(e.target.value)}
             />
           </label>
@@ -67,7 +66,6 @@ export default function ContactForm() {
               id="email"
               name="email"
               value={email}
-              on
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
@@ -80,7 +78,6 @@ export default function ContactForm() {
               id="message"
               name="message"
               value={message}
-              on
               onChange={(e) => setMessage(e.target.value)}
             />
           </label>

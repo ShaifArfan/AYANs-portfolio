@@ -13,6 +13,7 @@
 		"react-scripts": "4.0.3",
 		"react-transition-group": "^4.4.1",
 		"styled-components": "^5.2.2",
+		"swiper": "^6.5.4",
 		"web-vitals": "^1.1.1"
 	},
 	"scripts": {
