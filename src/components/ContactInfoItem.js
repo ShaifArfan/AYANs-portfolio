@@ -12,7 +12,6 @@ const ItemStyles = styled.div`
   border-radius: 8px;
   margin-bottom: 2rem;
   .icon {
-    font-size: 3rem;
     color: var(--white);
     background-color: var(--gray-2);
     padding: 1.3rem;
@@ -20,6 +19,9 @@ const ItemStyles = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+  }
+  svg {
+    width: 3.5rem;
   }
 `;
 

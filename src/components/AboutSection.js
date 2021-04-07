@@ -76,7 +76,6 @@ const AboutSectionStyles = styled.div`
       width: 100%;
     }
     .aboutSection__right {
-      /* height: auto; */
       margin-top: 3rem;
     }
     .section-title {
@@ -114,7 +113,7 @@ export default function AboutSection() {
             ever since the 1500s, when an unknown printer took{' '}
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Projects" btnLink="/projects" />
+            <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>

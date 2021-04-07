@@ -5,10 +5,10 @@ import PText from './PText';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
-  padding: 10rem 0 5rem 0;
+  padding-top: 10rem;
   .container {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
   }
   .footer__col1 {
     flex: 2;
@@ -21,6 +21,15 @@ const FooterStyle = styled.div`
   .footer__col1__title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+  }
+  .copyright {
+    background-color: var(--dark-bg);
+    text-align: left;
+    padding: 1rem 0;
+    margin-top: 5rem;
+    .para {
+      margin-left: 0;
+    }
   }
   @media only screen and (max-width: 768px) {
     .container {
@@ -100,6 +109,11 @@ export default function Footer() {
               },
             ]}
           />
+        </div>
+      </div>
+      <div className="copyright">
+        <div className="container">
+          <PText>All right Reserved 2021 - Shaif Arfan</PText>
         </div>
       </div>
     </FooterStyle>
