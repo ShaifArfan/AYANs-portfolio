@@ -24,7 +24,7 @@ const NavStyles = styled.nav`
       font-size: 2rem;
       color: var(--gray-1);
     }
-    .active_nav {
+    .active {
       color: var(--white);
     }
   }
@@ -35,7 +35,7 @@ export default function NavMenu() {
     <NavStyles>
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active_nav">
+          <NavLink to="/" exact>
             Home
           </NavLink>
         </li>

@@ -33,10 +33,8 @@ export default function FooterCol({
       <h2 className="heading">{heading}</h2>
       <ul>
         {links.map((item, index) => (
-          <li>
-            <Link key={index} to={item.link}>
-              {item.title}
-            </Link>
+          <li key={index}>
+            <Link to={item.link}>{item.title}</Link>
           </li>
         ))}
       </ul>

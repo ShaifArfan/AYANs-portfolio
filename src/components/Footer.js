@@ -86,7 +86,8 @@ export default function Footer() {
                 link: 'mailto:webcifar@gmail.com',
               },
               {
-                title: 'Chittagong, Bangladesh',
+                title: 'GEC Circle, Chittagong, Bangladesh',
+                link: '#',
               },
             ]}
           />
