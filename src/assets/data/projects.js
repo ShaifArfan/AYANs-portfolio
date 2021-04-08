@@ -11,7 +11,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Project - 02',
+    name: 'React',
     desc:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, ad.',
     img: ProjectImg,
