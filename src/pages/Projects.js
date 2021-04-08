@@ -4,7 +4,7 @@ import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
 
-const PorjectsStyle = styled.div`
+const ProjectStyle = styled.div`
   padding: 10rem 0;
   .projects__allItems {
     display: grid;
@@ -17,9 +17,6 @@ const PorjectsStyle = styled.div`
 export default function Projects() {
   const [searchText, setSearchText] = useState('');
   const [projectsData, setProjectsData] = useState(ProjectsInfo);
-  // const [filteredData, setFilteredData ] = useState([])
-  // console.log(projectsData);
-  // const filter = () => {};
   useEffect(() => {
     if (searchText === '') return;
     setProjectsData((oldData) =>
@@ -36,7 +33,7 @@ export default function Projects() {
     }
   };
   return (
-    <PorjectsStyle>
+    <ProjectStyle>
       <div className="container">
         <SectionTitle heading="Projects" subheading="some of my recent works" />
         <div className="projects__searchBar">
@@ -55,6 +52,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </PorjectsStyle>
+    </ProjectStyle>
   );
 }
