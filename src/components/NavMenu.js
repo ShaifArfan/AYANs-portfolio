@@ -33,7 +33,7 @@ const NavStyles = styled.nav`
     position: absolute;
     right: 1rem;
     top: 1rem;
-    width: 5rem;
+    width: 4rem;
     cursor: pointer;
     display: none;
     outline: none;

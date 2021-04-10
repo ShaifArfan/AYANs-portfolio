@@ -35,9 +35,9 @@ const ScrollStyle = styled.div`
 export default function App() {
   return (
     <ScrollStyle>
-      <Router>
-        <NavMenu />
-        <Scrollbar damping={0.1}>
+      <Scrollbar damping={0.1}>
+        <Router>
+          <NavMenu />
           <ScrollToTop />
           <Switch>
             <Route path="/about">
@@ -54,8 +54,8 @@ export default function App() {
             </Route>
           </Switch>
           <Footer />
-        </Scrollbar>
-      </Router>
+        </Router>
+      </Scrollbar>
     </ScrollStyle>
   );
 }
