@@ -7,6 +7,7 @@ import SectionTitle from './SectionTitle';
 import testimonials from '../assets/data/testimonials';
 
 const TestimonialSectionStyles = styled.div`
+  overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
   .testimonial__wrapper {

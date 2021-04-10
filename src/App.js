@@ -12,9 +12,9 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
-// scrollbar
-
+// Smooth scrollbar
 SmoothScrollbar.use(OverscrollPlugin);
+
 const ScrollStyle = styled.div`
   [data-scrollbar] {
     height: 100vh;
@@ -35,9 +35,9 @@ const ScrollStyle = styled.div`
 export default function App() {
   return (
     <ScrollStyle>
-      <Scrollbar damping={0.1}>
-        <Router>
-          <NavMenu />
+      <Router>
+        <NavMenu />
+        <Scrollbar damping={0.1}>
           <ScrollToTop />
           <Switch>
             <Route path="/about">
@@ -54,8 +54,8 @@ export default function App() {
             </Route>
           </Switch>
           <Footer />
-        </Router>
-      </Scrollbar>
+        </Scrollbar>
+      </Router>
     </ScrollStyle>
   );
 }

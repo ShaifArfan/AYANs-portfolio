@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
   position: fixed;
@@ -28,12 +29,81 @@ const NavStyles = styled.nav`
       color: var(--white);
     }
   }
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 5rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    * {
+      pointer-events: none;
+    }
+  }
+  .navItems .closeNavIcon {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
+    .mobile-menu-icon {
+      display: block;
+    }
+    .navItems {
+      --top: 1rem;
+      transition: 0.3s ease transform;
+      background-color: var(--deep-dark);
+      padding: 2rem;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1rem;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 `;
 
 export default function NavMenu() {
+  const [showNav, setShowNav] = useState(false);
   return (
     <NavStyles>
-      <ul>
+      <div
+        className="mobile-menu-icon"
+        onClick={() => setShowNav(!showNav)}
+        role="button"
+        onKeyDown={() => setShowNav(!showNav)}
+        tabIndex={0}
+      >
+        <MdMenu />
+      </div>
+
+      <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+        <div
+          className="closeNavIcon"
+          onClick={() => setShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => setShowNav(!showNav)}
+          tabIndex={0}
+        >
+          <MdClose />
+        </div>
         <li>
           <NavLink to="/" exact>
             Home
