@@ -8,13 +8,15 @@ import ContactBanner from './ContactBanner';
 
 export default function Home() {
   return (
-    <>
+    <div>
+      {/* <Scrollbar> */}
       <Hero />
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />
       <TestimonialsSection />
       <ContactBanner />
-    </>
+      {/* </Scrollbar> */}
+    </div>
   );
 }
