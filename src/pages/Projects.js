@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
+import Scrollbar from 'react-smooth-scrollbar';
 import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
+import Footer from '../components/Footer';
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -64,26 +66,32 @@ export default function Projects() {
     }
   };
   return (
-    <ProjectStyle>
-      <div className="container">
-        <SectionTitle heading="Projects" subheading="some of my recent works" />
-        <div className="projects__searchBar">
-          <form>
-            <input
-              type="text"
-              value={searchText}
-              onChange={handleChange}
-              placeholder="Project Name"
-            />
-            <MdSearch className="searchIcon" />
-          </form>
+    <Scrollbar>
+      <ProjectStyle>
+        <div className="container">
+          <SectionTitle
+            heading="Projects"
+            subheading="some of my recent works"
+          />
+          <div className="projects__searchBar">
+            <form>
+              <input
+                type="text"
+                value={searchText}
+                onChange={handleChange}
+                placeholder="Project Name"
+              />
+              <MdSearch className="searchIcon" />
+            </form>
+          </div>
+          <div className="projects__allItems">
+            {projectsData.map((item) => (
+              <ProjectItem key={item.id} title={item.name} />
+            ))}
+          </div>
         </div>
-        <div className="projects__allItems">
-          {projectsData.map((item) => (
-            <ProjectItem key={item.id} title={item.name} />
-          ))}
-        </div>
-      </div>
-    </ProjectStyle>
+      </ProjectStyle>
+      <Footer />
+    </Scrollbar>
   );
 }

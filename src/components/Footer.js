@@ -60,11 +60,15 @@ export default function Footer() {
             links={[
               {
                 title: 'Home',
-                link: '/home',
+                link: '/',
               },
               {
                 title: 'About',
                 link: '/about',
+              },
+              {
+                title: 'Projects',
+                link: '/projects',
               },
               {
                 title: 'Contact',
