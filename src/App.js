@@ -22,7 +22,6 @@ export default function App() {
       <Router>
         <NavMenu />
         <ScrollToTop />
-        {/* <Scrollbar damping={0.1}> */}
         <Switch>
           <Route path="/about">
             <About />
@@ -37,8 +36,6 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-        {/* <Footer /> */}
-        {/* </Scrollbar> */}
       </Router>
     </>
   );

@@ -7,11 +7,11 @@ import Map from '../components/Map';
 export default function Contact() {
   return (
     <>
-      <Scrollbar>
-        <ContactSection />
-        <Map />
-        <Footer />
-      </Scrollbar>
+      {/* <Scrollbar> */}
+      <ContactSection />
+      <Map />
+      <Footer />
+      {/* </Scrollbar> */}
     </>
   );
 }

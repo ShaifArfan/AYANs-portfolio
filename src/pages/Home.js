@@ -10,11 +10,11 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from '../components/ContactBanner';
 import Footer from '../components/Footer';
 
-// SmoothScrollbar.use(OverscrollPlugin);
+SmoothScrollbar.use(OverscrollPlugin);
 export default function Home() {
   return (
     <div>
-      <Scrollbar damping={0.1}>
+      <Scrollbar>
         <Hero />
         <AboutSection />
         <ServicesSection />
