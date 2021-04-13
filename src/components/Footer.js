@@ -47,7 +47,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Shaif Arfan</h1>
+          <h1 className="footer__col1__title">Ayan Khan</h1>
           <PText>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -122,7 +122,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>All right Reserved 2021 - Shaif Arfan</PText>
+          <PText>All right Reserved 2021 - Ayan Khan</PText>
         </div>
       </div>
     </FooterStyle>

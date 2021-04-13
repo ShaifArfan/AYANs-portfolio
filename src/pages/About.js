@@ -7,7 +7,7 @@ import AboutInfoItems from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
-  padding: 10rem 0;
+  padding: 20rem 0 10rem 0;
 
   .top-section {
     display: flex;
@@ -56,6 +56,7 @@ const AboutPageStyles = styled.div`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
@@ -80,7 +81,7 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Shaif Arfan</span>
+                Hi, I am <span>Ayan Khan</span>
               </p>
               <h2 className="about__heading">a freelance Web developer</h2>
               <div className="about__info">

@@ -12,7 +12,7 @@ const ItemStyles = styled.div`
   }
   .servicesItem__title {
     font-size: 2.5rem;
-    font-family: 'RobotoMono SemiBold';
+    font-family: 'Montserrat SemiBold';
   }
   .para {
     margin-top: 2rem;
