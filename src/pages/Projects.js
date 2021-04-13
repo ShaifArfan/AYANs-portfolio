@@ -66,7 +66,7 @@ export default function Projects() {
     }
   };
   return (
-    <Scrollbar>
+    <>
       <ProjectStyle>
         <div className="container">
           <SectionTitle
@@ -91,7 +91,6 @@ export default function Projects() {
           </div>
         </div>
       </ProjectStyle>
-      <Footer />
-    </Scrollbar>
+    </>
   );
 }

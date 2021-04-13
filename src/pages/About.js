@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Scrollbar from 'react-smooth-scrollbar';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItems from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-import Footer from '../components/Footer';
 
 const AboutPageStyles = styled.div`
   padding: 10rem 0;
@@ -76,7 +74,7 @@ const AboutPageStyles = styled.div`
 
 export default function About() {
   return (
-    <Scrollbar>
+    <>
       <AboutPageStyles>
         <div className="container">
           <div className="top-section">
@@ -164,7 +162,6 @@ export default function About() {
         </div>
         <ContactBanner />
       </AboutPageStyles>
-      <Footer />
-    </Scrollbar>
+    </>
   );
 }

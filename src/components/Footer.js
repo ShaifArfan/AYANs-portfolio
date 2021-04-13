@@ -61,16 +61,20 @@ export default function Footer() {
               {
                 title: 'Home',
                 link: '/',
+                type: 'Link',
               },
               {
+                type: 'Link',
                 title: 'About',
                 link: '/about',
               },
               {
+                type: 'Link',
                 title: 'Projects',
                 link: '/projects',
               },
               {
+                type: 'Link',
                 title: 'Contact',
                 link: '/contact',
               },
@@ -91,7 +95,7 @@ export default function Footer() {
               },
               {
                 title: 'GEC Circle, Chittagong, Bangladesh',
-                link: '#',
+                link: 'http://google.com/maps',
               },
             ]}
           />
