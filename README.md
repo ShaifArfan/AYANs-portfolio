@@ -1,6 +1,8 @@
 # Ayan's Portfolio website [React Project]
 
-Coded by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
+## Live Preview: [Open Link][preview]
+
+Coded by - [shaif Arfan](http://instagram.com/shaifarfan08) | [web cifar](http://webcifar.com)
 
 ![](./ReadMeImages/ReadMeBanner.png)
 
@@ -55,3 +57,5 @@ something like that:
 ```
 Designed By Web Cifar
 ```
+
+[preview]: https://ayans-portfolio.netlify.app/
