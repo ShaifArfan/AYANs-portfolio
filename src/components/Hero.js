@@ -150,7 +150,7 @@ export default function Hero() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name"> Shaif Arfan</span>
+            <span className="hero__name">Mukhtar</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
