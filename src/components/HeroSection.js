@@ -8,7 +8,8 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 1000px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -95,6 +96,9 @@ const HeroStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .hero {
+      min-height: 750px;
+    }
     .hero__heading {
       font-size: 1.4rem;
       margin-bottom: -3rem;

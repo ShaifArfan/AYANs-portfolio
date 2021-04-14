@@ -34,10 +34,20 @@ const FooterStyle = styled.div`
   @media only screen and (max-width: 768px) {
     .container {
       flex-direction: column;
-      gap: 5rem;
+      gap: 0rem;
+      & > div {
+        margin-top: 5rem;
+      }
     }
     .footer__col1 .para {
       max-width: 100%;
+    }
+    .copyright {
+      .container {
+        div {
+          margin-top: 0;
+        }
+      }
     }
   }
 `;

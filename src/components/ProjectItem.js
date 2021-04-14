@@ -10,6 +10,7 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
+    border: 3px solid var(--gray-2);
     img {
       height: 100%;
     }
@@ -27,6 +28,11 @@ const ProjectItemStyles = styled.div`
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .projectItem__img {
+      height: 350px;
+    }
   }
 `;
 

@@ -42,13 +42,14 @@ const TestimonialSectionStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     svg {
       width: 30px;
       pointer-events: none;
     }
     .next,
     .prev {
+      margin: 0 0.5rem;
       width: fit-content;
       background-color: var(--deep-dark);
       padding: 0.5rem 2rem;
@@ -108,12 +109,7 @@ export default function TestimonialsSection() {
         />
         <div className="testimonial__wrapper">
           <SwitchTransition component={null}>
-            <CSSTransition
-              key={activeSlide.id}
-              // in={isVisible}
-              timeout={300}
-              classNames="fade"
-            >
+            <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">
                 <div className="testimonial__desc">
                   <PText>{activeSlide.desc}</PText>
