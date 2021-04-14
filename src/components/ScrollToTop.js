@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Scrollbar from 'react-smooth-scrollbar';
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();

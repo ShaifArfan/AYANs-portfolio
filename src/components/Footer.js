@@ -49,9 +49,9 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Ayan Khan</h1>
           <PText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took{' '}
+            A freelance web designer and developer from Chittagong, Bangladesh.
+            I always make websites that have unique designs and also has a good
+            performance rate.
           </PText>
         </div>
         <div className="footer__col2">

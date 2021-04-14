@@ -1,27 +1,27 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Arfan',
+    name: 'Shaif Arfan',
     title: 'CEO',
     org: 'WEB CIFAR',
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took",
+      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
   },
   {
     id: 2,
-    name: 'Fahim',
-    title: 'MD',
-    org: 'WEB CIFAR',
+    name: 'Fahim Elahe',
+    title: 'Co-founder',
+    org: 'Kreetive',
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took",
+      'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
   },
   {
     id: 3,
     name: 'Sayed',
     title: 'Marketing Head',
-    org: 'WEB CIFAR',
+    org: 'Eleven Dawn',
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took",
+      'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
   },
 ];
 export default testimonials;

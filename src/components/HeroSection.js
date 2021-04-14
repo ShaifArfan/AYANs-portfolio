@@ -38,7 +38,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -23rem;
+    margin-top: -18rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -143,7 +143,7 @@ const HeroStyles = styled.div`
   }
 `;
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <HeroStyles>
       <div className="hero">
@@ -157,9 +157,9 @@ export default function Hero() {
           </div>
           <div className="hero__info">
             <PText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took
+              I am working as a freenlance web designer and developer for 4
+              years. I love to design and make new web experiences for the
+              people.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
@@ -171,16 +171,40 @@ export default function Hero() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="http://webcifar.com">FB</a>
+                  <a
+                    href="http://facebook.com/webcifar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    FB
+                  </a>
                 </li>
                 <li>
-                  <a href="http://webcifar.com">TW</a>
+                  <a
+                    href="http://twitter.com/webcifar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    TW
+                  </a>
                 </li>
                 <li>
-                  <a href="http://webcifar.com">IG</a>
+                  <a
+                    href="http://isntagram.com/web_cifar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    IG
+                  </a>
                 </li>
                 <li>
-                  <a href="http://webcifar.com">LI</a>
+                  <a
+                    href="http://webcifar.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LI
+                  </a>
                 </li>
               </ul>
             </div>

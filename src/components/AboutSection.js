@@ -108,9 +108,9 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took{' '}
+            I am a freelance website designer and developer from Chittagong,
+            Bangladesh. I create professional websites. I love art and always
+            try to show unique views to the audience through my design.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />

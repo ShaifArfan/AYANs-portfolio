@@ -18,8 +18,14 @@ const NavStyles = styled.nav`
     text-align: center;
     li {
       display: inline-block;
+      border-radius: 8px;
+      transition: 0.3s ease background-color;
+      &:hover {
+        background-color: var(--deep-dark);
+      }
     }
     a {
+      display: inline-block;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;

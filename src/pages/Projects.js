@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
-import Scrollbar from 'react-smooth-scrollbar';
 import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
-import Footer from '../components/Footer';
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
