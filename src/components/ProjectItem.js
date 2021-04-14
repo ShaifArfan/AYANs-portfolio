@@ -6,6 +6,7 @@ import ProjectImg from '../assets/images/projectImg.png';
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
+    height: 400px;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;

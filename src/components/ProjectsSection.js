@@ -83,7 +83,11 @@ export default function ProjectsSection() {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <ProjectItem title={project.name} img={project.img} />
+                <ProjectItem
+                  title={project.name}
+                  img={project.img}
+                  desc={project.desc}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
