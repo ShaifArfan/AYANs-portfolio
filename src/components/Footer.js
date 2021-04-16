@@ -132,7 +132,12 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>All right Reserved 2021 - Ayan Khan</PText>
+          <PText>
+            © 2021 - Ayan Khan | Designed By{' '}
+            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
+              web cifar
+            </a>{' '}
+          </PText>
         </div>
       </div>
     </FooterStyle>

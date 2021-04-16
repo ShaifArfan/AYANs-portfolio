@@ -50,12 +50,8 @@ npm start
 
 ## want to use the website ?
 
-This tutorial is made for educational purpose. Also this is free to use. Though if you use this website, you need to give us the proper credit for the website.
+This tutorial is made for educational purpose. Also this is free to use. Though if you use this website, you need to give us the proper credit for the website. keep the bottom footer part of the website.
 
-something like that:
-
-```
-Designed By Web Cifar
-```
+![](./ReadMeImages/designedByWebCifar.png)
 
 [preview]: https://ayans-portfolio.netlify.app/
