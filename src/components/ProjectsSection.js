@@ -57,7 +57,7 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
-  console.log(projects);
+  // console.log(projects);
   return (
     <ProjectSectionStyle>
       <div className="container">

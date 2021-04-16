@@ -32,7 +32,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="web design"
-            desc="I do ui/ux design for the website that helps website to get a uiquw look."
+            desc="I do ui/ux design for the website that helps website to get a unique look."
           />
           <ServicesSectionItem
             icon={<MdCode />}
