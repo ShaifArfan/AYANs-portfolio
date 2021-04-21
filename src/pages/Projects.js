@@ -50,8 +50,8 @@ export default function Projects() {
   const [projectsData, setProjectsData] = useState(ProjectsInfo);
   useEffect(() => {
     if (searchText === '') return;
-    setProjectsData((oldData) =>
-      oldData.filter((item) =>
+    setProjectsData(() =>
+      ProjectsInfo.filter((item) =>
         item.name.toLowerCase().match(searchText.toLowerCase())
       )
     );
