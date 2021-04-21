@@ -16,7 +16,7 @@ This is a beginner-friendly react js project. There will be a full free step-by-
 
 1. HTML, CSS
 1. JavaScript
-1. React Basic
+1. React Basic (optional)
 
 ## What we are going to Use/learn
 
@@ -36,7 +36,7 @@ For the starter files, we created a `branch` in this repository named `starter_f
 
 ## Getting Started
 
-You can Follow the YouTube [Playlist][youtube link] to get started. You will find all the step-by-step guides for free. Or you start the project on your own by following the guide below.
+The recommended way to get started with the project is Follow the [YouTube tutorial][youtubelink]. You will find all the step-by-step guides for free. Or you Can start the project on your own by following the guide below.
 
 After getting the starter files, you need to go the file directory and run
 
@@ -44,18 +44,18 @@ After getting the starter files, you need to go the file directory and run
 npm install
 ```
 
-and after that start the server.
+and after that start the live server.
 
 ```shell
 npm start
 ```
 
-### If you like the tutorial, please share this with others.
-
 ## want to use the website ?
 
 This tutorial is made for educational purpose. Also this is free to use. Though if you use this website, you need to give us the proper credit for the website. keep the bottom footer part of the website.
 ![](./ReadMeImages/designedByWebCifar.png)
+
+# If you like the tutorial, please share this with others.
 
 [preview]: https://ayans-portfolio.netlify.app/
 [youtubelink]: https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ
