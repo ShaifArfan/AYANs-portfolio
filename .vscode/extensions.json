@@ -1,6 +1,7 @@
 {
 	"recommendations": [
 		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
 		"formulahendry.auto-rename-tag",
 		"jpoissonnier.vscode-styled-components"
 	]
