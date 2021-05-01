@@ -90,9 +90,6 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          {/* <div className="empty" /> */}
-          {/* <img className="about1" src={AboutImg1} alt="Img" />
-          <img className="about2" src={AboutImg2} alt="Img" /> */}
           <img className="aboutImg" src={AboutImg} alt="Img" />
         </div>
       </div>
