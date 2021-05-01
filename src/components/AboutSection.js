@@ -31,33 +31,6 @@ const AboutSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
-  .aboutSection__right {
-    position: relative;
-    .empty {
-      width: 100%;
-      height: 100%;
-    }
-    .about1,
-    .about2 {
-      border: 2px solid var(--gray-1);
-    }
-    .about1 {
-      position: absolute;
-      max-width: 450px;
-      min-width: 350px;
-      width: 65%;
-      height: auto;
-      right: 0;
-      top: 0;
-    }
-    .about2 {
-      position: absolute;
-      max-width: 200px;
-      height: auto;
-      right: 50%;
-      top: 50%;
-    }
-  }
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
       flex: 4;
@@ -103,7 +76,6 @@ export default function AboutSection() {
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle
-            className="section-title"
             subheading="Let me introduce myself"
             heading="About Me"
           />
