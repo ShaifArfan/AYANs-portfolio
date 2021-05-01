@@ -58,5 +58,5 @@ This tutorial is made for educational purpose. Also this is free to use. Though 
 # If you like the tutorial, please share this with others.
 
 [preview]: https://ayans-portfolio.netlify.app/
-[youtubelink]: https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ
+[youtubelink]: https://www.youtube.com/playlist?list=PLRv_Gd5w9e7mO-lGxKkNSWiAlsiZHnQYY
 [webcifarwebsite]: https://webcifar.com
