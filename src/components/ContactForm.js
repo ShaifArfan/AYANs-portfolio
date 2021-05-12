@@ -60,7 +60,7 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="email">
-            Your Name
+            Your Email
             <input
               type="email"
               id="email"
