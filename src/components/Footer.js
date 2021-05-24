@@ -70,23 +70,23 @@ export default function Footer() {
             links={[
               {
                 title: 'Home',
-                link: '/',
+                path: '/',
                 type: 'Link',
               },
               {
                 type: 'Link',
                 title: 'About',
-                link: '/about',
+                path: '/about',
               },
               {
                 type: 'Link',
                 title: 'Projects',
-                link: '/projects',
+                path: '/projects',
               },
               {
                 type: 'Link',
                 title: 'Contact',
-                link: '/contact',
+                path: '/contact',
               },
             ]}
           />
@@ -97,15 +97,15 @@ export default function Footer() {
             links={[
               {
                 title: '+88012312',
-                link: 'tel:+88012312',
+                path: 'tel:+88012312',
               },
               {
                 title: 'webcifar@gmail.com',
-                link: 'mailto:webcifar@gmail.com',
+                path: 'mailto:webcifar@gmail.com',
               },
               {
                 title: 'GEC Circle, Chittagong, Bangladesh',
-                link: 'http://google.com/maps',
+                path: 'http://google.com/maps',
               },
             ]}
           />
@@ -116,15 +116,15 @@ export default function Footer() {
             links={[
               {
                 title: 'Facebook',
-                link: 'http://facebook.com',
+                path: 'http://facebook.com',
               },
               {
                 title: 'Twitter',
-                link: 'http://twitter.com',
+                path: 'http://twitter.com',
               },
               {
                 title: 'Instagram',
-                link: 'http://instagram.com',
+                path: 'http://instagram.com',
               },
             ]}
           />
