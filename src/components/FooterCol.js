@@ -16,15 +16,15 @@ const ColStyle = styled.div`
 `;
 
 export default function FooterCol({
-  heading = 'Col Heaing',
+  heading = 'Col Heading',
   links = [
     {
-      type: 'Links',
+      type: 'Link',
       title: 'Home',
       path: '/home',
     },
     {
-      type: 'Links',
+      type: 'Link',
       title: 'About',
       path: '/about',
     },
