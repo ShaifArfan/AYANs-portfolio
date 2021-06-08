@@ -1,6 +1,6 @@
 # Ayan's Portfolio website [React Project]
 
-## Watch On YouTube: [Watch][youtubelink]
+## Watch On YouTube ![YouTube Video Views](https://img.shields.io/youtube/views/esC2k9z7w2U?style=social) : [Watch Now][youtubelink]
 
 ## Live Preview: [Open Link][preview]
 
