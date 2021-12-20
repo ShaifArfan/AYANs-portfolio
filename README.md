@@ -56,6 +56,14 @@ npm start
 
 This website is made for educational purposes. Also, this will be free to use. Though a proper credit will be appreciated.
 
+## Similar Projects
+
+Here are some Similar projects that you might be interested.
+
+- [Artistic - React JS Project](https://github.com/ShaifArfan/artistic)
+- [Shaif's Cuisine - HTML, CSS project](https://github.com/ShaifArfan/shaif-s-cuisine)
+- [Amy's Portfolio - HTML, CSS Project](https://github.com/ShaifArfan/AMYs-Portfolio)
+
 # If you like the tutorial, please share this with others.
 
 [preview]: https://ayans-portfolio.netlify.app/
