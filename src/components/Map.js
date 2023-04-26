@@ -52,7 +52,7 @@ export default function Map() {
           <PText>Aligarh, UP, India</PText>
           <a
             className="map__card__link"
-            href="https://www.google.com/maps/place/GEC+More,+Chittagong/@22.3590818,91.8195583,17z/data=!3m1!4b1!4m5!3m4!1s0x30acd89aaa8239cd:0x6e65fa00001dd59f!8m2!3d22.3590715!4d91.8215486"
+            href="https://www.google.com/maps/place/Nadeem+Tarin+Hall/@27.90992,78.0994099,15z/data=!4m6!3m5!1s0x3974a4e56e741dc5:0xf3556d1291fa38f9!8m2!3d27.9138164!4d78.0890873!16s%2Fg%2F1tfz8llt"
             target="_blank"
             rel="noreferrer"
           >
