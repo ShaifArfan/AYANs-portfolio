@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import my3 from '../assets/images/my3.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -103,7 +103,7 @@ export default function About() {
               <Button btnText="Download CV" btnLink="#" />
             </div>
             <div className="right">
-              <img src={AboutImg} alt="me" />
+              <img src={my3} alt="me" />
             </div>
           </div>
           <div className="about__info__items">
