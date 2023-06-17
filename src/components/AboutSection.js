@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import my2 from '../assets/images/my2.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -80,9 +80,11 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            My name is Adarsh Chaudhary. I'm an Btech undergraduate at ZHCET
+            AMU. I was born and raised in Aligarh. I'm great at knowing the
+            right algoritm for a problem because i read computer science
+            literature constantly. Feel free to have a look at my projects below
+            and connect with me!.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
@@ -90,7 +92,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
+          <img className="aboutImg" src={my2} alt="Img" />
         </div>
       </div>
     </AboutSectionStyles>

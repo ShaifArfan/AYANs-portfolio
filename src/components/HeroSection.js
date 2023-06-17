@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import my1 from '../assets/images/my1.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -154,16 +154,14 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name">Ayan Khan</span>
+            <span className="hero__name">Adarsh Chaudhary</span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src={my1} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
-              people.
+            <PText className="p1">
+              I'm an Software Developer, I'm a Designer, And I'm a Freelancer.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
@@ -176,25 +174,17 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="https://github.com/cadarsh440"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    GH
                   </a>
                 </li>
+
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
+                    href="https://www.instagram.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -203,7 +193,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/adarsh-chaudhary-16062320b/"
                     target="_blank"
                     rel="noreferrer"
                   >
